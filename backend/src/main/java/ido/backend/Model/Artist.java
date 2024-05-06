@@ -20,7 +20,8 @@ public class Artist {
 
     @OneToMany(
             cascade = CascadeType.PERSIST,
-            fetch = FetchType.LAZY
+            fetch = FetchType.LAZY,
+            mappedBy = "artist"
     )
     List<Album> albums;
 }

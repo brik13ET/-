@@ -23,12 +23,12 @@ public class Album {
 
     @OneToMany(
             cascade = CascadeType.ALL,
-            fetch = FetchType.LAZY
+            fetch = FetchType.LAZY,
+            mappedBy = "album"
     )
     List<Track> trackList;
 
     @ManyToOne
-    @JoinColumn(nullable = false, unique = true, foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT))
     Artist artist;
 
 

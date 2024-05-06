@@ -1,0 +1,4 @@
+@for (track of  (tracks$ | async); track track.id)
+{
+  <app-track-card [track]="track" [album]=""></app-track-card>
+}

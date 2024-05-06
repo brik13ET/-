@@ -24,7 +24,6 @@ public class Track {
     Genre genre;
 
     @ManyToOne(optional = false, targetEntity = Album.class, cascade = CascadeType.PERSIST)
-    @JoinColumn(nullable = false, unique = true, foreignKey = @ForeignKey(value = ConstraintMode.CONSTRAINT))
     Album album;
 
 }

@@ -1,7 +1,6 @@
 package ido.backend.Dto;
 
 import ido.backend.Model.Album;
-import ido.backend.Repository.AlbumRepository;
 import ido.backend.Repository.ArtistRepository;
 import lombok.*;
 
